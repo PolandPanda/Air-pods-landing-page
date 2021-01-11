@@ -131,4 +131,109 @@ img {
 .show {
   top: 3rem;
 }
+
+.home {
+  height: calc(100vh - 3rem);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1.5fr 1fr 1fr;
+      grid-template-rows: 1.5fr 1fr 1fr;
+      grid-template-areas: "data" "img" "scroll";
+  row-gap: 1.5rem;
+}
+
+.home__data {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: data;
+  text-align: center;
+  padding-top: 3.5rem;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.home__description {
+  font-size: var(--normal-font-size);
+  padding: 0 1rem;
+}
+
+.home__img {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home__img img {
+  width: 81px;
+  height: 177px;
+  margin-right: 1rem;
+}
+
+.home__scroll {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: scroll;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__scroll-text {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.home__scroll-icon {
+  width: 2rem;
+}
+
+.airpod1 {
+  -webkit-animation: airpod1 3s infinite;
+          animation: airpod1 3s infinite;
+}
+
+@-webkit-keyframes airpod1 {
+  50% {
+    -webkit-transform: translatey(-6%);
+            transform: translatey(-6%);
+  }
+}
+
+@keyframes airpod1 {
+  50% {
+    -webkit-transform: translatey(-6%);
+            transform: translatey(-6%);
+  }
+}
+
+.airpod2 {
+  -webkit-animation: airpod2 3s infinite;
+          animation: airpod2 3s infinite;
+}
+
+@-webkit-keyframes airpod2 {
+  50% {
+    -webkit-transform: translatey(6%);
+            transform: translatey(6%);
+  }
+}
+
+@keyframes airpod2 {
+  50% {
+    -webkit-transform: translatey(6%);
+            transform: translatey(6%);
+  }
+}
 /*# sourceMappingURL=style.css.map */

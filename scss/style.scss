@@ -131,3 +131,71 @@ img {
 .show {
     top: $header-height;
 }
+
+// Home
+.home{
+    height: calc(100vh - #{$header-height});
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    grid-template-areas: "data" "img" "scroll";
+    row-gap: 1.5rem;
+
+    &__data{
+        grid-area: data;
+        text-align: center;
+        padding-top: 3.5rem;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-weight: $font-regular;
+        margin-bottom: 1.5rem;
+    }
+    &__description{
+        font-size: var(--normal-font-size);
+        padding: 0 1rem;
+    }
+    &__img{
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        & img{
+            width: 81px;
+            height: 177px;
+            margin-right: 1rem;
+        }
+    }
+
+    &__scroll{
+        grid-area: scroll;
+        text-align: center;
+        align-self: center;
+
+        &-text{
+            display: block;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        &-icon{
+            width: 2rem;
+        }
+    }        
+}
+
+.airpod1{
+    animation: airpod1 3s infinite;
+
+    @keyframes airpod1{
+        50%{
+            transform: translatey(-6%);
+        }
+    }
+}
+.airpod2{
+    animation: airpod2 3s infinite;
+
+    @keyframes airpod2{
+        50%{
+            transform: translatey(6%);
+        }
+    }
+}
