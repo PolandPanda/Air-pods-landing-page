@@ -41,6 +41,9 @@ $body-font: 'Roboto', sans-serif;
 }
 
 }
+a {
+    text-decoration: none;
+}
 
 * {
     box-sizing: border-box;
@@ -233,5 +236,12 @@ img {
         50%{
             transform: translatey(6%);
         }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
     }
 }

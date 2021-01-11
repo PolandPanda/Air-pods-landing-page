@@ -25,6 +25,10 @@
   --z-modal: 1000;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -283,6 +287,13 @@ img {
   50% {
     -webkit-transform: translatey(6%);
             transform: translatey(6%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
